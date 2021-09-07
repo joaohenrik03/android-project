@@ -140,10 +140,24 @@ main p {
     padding-bottom: 10px;
 
     text-align: justify;
+    text-indent: 25px;
+}
+
+main p > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor4);
+}
+
+main p > strong {
+    color: var(--cor4);
+    font-weight: bold;
 }
 
 main img {
     width: 100%;
+
+    padding: 8px 0px;
 }
 
 main img.pequena {
