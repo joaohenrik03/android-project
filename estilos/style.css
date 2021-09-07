@@ -33,21 +33,62 @@ body {
 }
 
 header {
-    background-color: var(--cor4);
+    background-image: linear-gradient(to top, var(--cor5), var(--cor4), var(--cor3), var(--cor2) );
+
+    text-align: center;
+
+    min-height: 145px;
+
+    padding-top: 25px;
 }
 
 header > h1 {
     color: white;
+    font-size: 3em;
+
+    padding-bottom: 12px;
 
     font-family: var(--fonte-destaque);
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.248);
 }
 
-header > p {
-    color: white;
+header > h2 {
+    color: var(--cor0);
+
+    font-family: var(--fonte-padrao);
+    font-size: 1.1em;
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.248);
+
+    max-width: 580px;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 nav {
     background-color: var(--cor5);
+    padding: 10px;
+
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.248);
+}
+
+nav > a {
+    text-decoration: none;
+    font-family: var(--fonte-padrao);
+    font-weight: bold;
+    font-size: 1em;
+    
+    padding: 10px;
+
+    color: white;
+}
+
+nav > a:hover {
+    background-color: var(--cor3);
+    color: var(--cor5);
+    transition: 0.1s;
+
+    border-radius: 10px;
 }
 
 main {
