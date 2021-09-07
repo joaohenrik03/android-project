@@ -108,11 +108,41 @@ main {
 
 main h1 {
     color: var(--cor5);
+    background-image: linear-gradient(to right, var(--cor3), white);
+
     font-family: var(--fonte-android);
+
+    text-align: left;
+    font-size: 1.5em;
+
+    padding: 1px 5px;
 }
 
 main h2 {
     font-family: var(--fonte-android);
+
+    color: var(--cor5);
+    background-image: linear-gradient(to right, var(--cor3), white);
+
+    text-align: left;
+    font-size: 1.5em;
+
+    padding: 1px 5px;
+}
+
+main h3 {
+    font-family: var(--fonte-android);
+
+    color: var(--cor5);
+}
+
+main p {
+    font-family: var(--fonte-padrao);
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    text-align: justify;
 }
 
 main img {
