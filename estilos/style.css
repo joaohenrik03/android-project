@@ -107,27 +107,24 @@ main {
 }
 
 main h1 {
-    color: var(--cor5);
-    background-image: linear-gradient(to right, var(--cor3), white);
+    color: var(--cor4);
 
     font-family: var(--fonte-android);
 
     text-align: left;
-    font-size: 1.5em;
-
-    padding: 1px 5px;
+    font-size: 1.9em;
 }
 
 main h2 {
     font-family: var(--fonte-android);
 
-    color: var(--cor5);
-    background-image: linear-gradient(to right, var(--cor3), white);
+    color: var(--cor4);
+    background-image: linear-gradient(to right, var(--cor1), white);
 
     text-align: left;
-    font-size: 1.5em;
+    font-size: 1.3em;
 
-    padding: 1px 5px;
+    padding: 1px 10px;
 }
 
 main h3 {
