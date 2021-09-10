@@ -300,5 +300,23 @@ footer p > a {
     main p {
         font-size: 1em;
     }
+
+    main {
+        max-width: 360px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav > a {
+        font-size: 1em;
+    }
+
+    main p {
+        font-size: 1em;
+    }
+
+    main {
+        max-width: 645px;
+    }    
 }
 
