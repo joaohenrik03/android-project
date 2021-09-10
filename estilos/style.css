@@ -263,7 +263,7 @@ footer p > a {
         font-size: 0.95em;
     }
 
-    main article > p {
+    main p {
         font-size: 1em;
     }
 
@@ -282,10 +282,23 @@ footer p > a {
         font-size: 0.95em;
     }
 
-    main article > p {
+    main p {
         font-size: 1em;
     }
 }
 
+@media (max-width: 425px) {
+    header > h2 {
+        padding-bottom: 20px;
+    }
 
+    nav > a {
+        padding: 3px;
+        font-size: 1em;
+    }
+
+    main p {
+        font-size: 1em;
+    }
+}
 
