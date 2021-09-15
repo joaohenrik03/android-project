@@ -37,6 +37,7 @@ header {
 
     text-align: center;
 
+    min-width: 370px;
     min-height: 145px;
 
     padding-top: 25px;
@@ -62,6 +63,7 @@ header > h2 {
     text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.248);
 
     max-width: 580px;
+
     margin: auto;
     padding-left: 10px;
     padding-right: 10px;
@@ -153,7 +155,9 @@ main p {
 
     text-align: justify;
     text-indent: 25px;
+
     line-height: 1.5em;
+
     font-size: 1.1em;
 }
 
@@ -178,6 +182,7 @@ main p > a:hover {
 
 main p > strong {
     color: var(--cor5);
+
     font-weight: bold;
 }
 
@@ -231,8 +236,10 @@ div.video {
 
 div.video > iframe {
     position: absolute;
+
     top: 5%;
     left: 5%;
+
     width: 90%;
     height: 90%;
 }
@@ -240,6 +247,8 @@ div.video > iframe {
 footer {
     background-color: var(--cor5);
     color: white;
+
+    min-width: 370px;
 }
 
 footer > p {
