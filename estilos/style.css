@@ -279,7 +279,7 @@ footer p > a {
         display: none;
         position: absolute;
         width: 100%;
-        top: 45%;
+        top: 41%;
         left: 0;
         background-color: var(--cor5);
         z-index: 1000;
@@ -294,7 +294,7 @@ footer p > a {
 
     #nav.active #menu {
         display: flex;
-        height: calc(100vh - 45%);
+        height: calc(100vh - 41%);
         flex-direction: column;
         align-items: center;
         border-top: 2px solid var(--cor1);
