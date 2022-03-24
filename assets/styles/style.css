@@ -222,7 +222,7 @@ div.video {
     position: relative;
 }
 
-div.video > iframe {
+div.video iframe {
     position: absolute;
 
     top: 5%;
@@ -235,22 +235,21 @@ div.video > iframe {
 footer {
     background-color: var(--color5);
     color: white;
-
-    min-width: 370px;
+    width: 100%;
 }
 
-footer > p {
+footer p {
     text-align: center;
     font-family: var(--fonte-padrao);
-    font-size: 0.9em;
+    font-size: 1rem;
+    font-weight: 400;
     color: white;
 
     padding: 2px 0px;
 }
 
-footer p > a {
+footer p a {
     text-decoration: none;
-
     color: var(--color1);
 }
 
