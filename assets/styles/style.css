@@ -80,7 +80,7 @@ header h2 {
     bottom: 0;
 }
 
-nav li {
+.nav li {
     list-style: none;
     display: inline-block;
 
@@ -88,7 +88,7 @@ nav li {
     margin-left: 12px;
 }
 
-nav a {
+.nav a {
     text-decoration: none;
     font-family: var(--default-font);
     font-weight: 500;
@@ -99,7 +99,7 @@ nav a {
     color: white;
 }
 
-nav a:hover {
+.nav a:hover {
     background-color: var(--color3);
     color: #f9f9f9;
     transition: 0.3s;
@@ -274,22 +274,35 @@ footer p a {
 /*========= RESPONSIVE =========*/
 /*========= RESPONSIVE =========*/
 
-@media (max-width: 470px) {
+@media (max-width: 825px) {
 
-    header > h2 {
-        font-size: 0.9em;
-        padding-bottom: 15px;
+    header h1 {
+        font-size: 2.2rem;
+    }    
+
+    header h2 {
+        font-size: 0.9rem;
+        max-width: 400px;
     }
 
-    main h1 {
-        font-size: 1.6em;
+    ul.nav {
+        opacity: 0;
+        visibility: hidden;
     }
 
-    main h2 {
-        font-size: 1.1;
+    .icon-menu {
+        opacity: 1;
+        visibility: visible;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        margin: 0 15px 15px 0;
+
+        color: var(--color0);
+        font-size: 1.8em;
     }
 
-    main p {
-        font-size: 1em;
+    main {
+        max-width: 650px;
     }
 }
