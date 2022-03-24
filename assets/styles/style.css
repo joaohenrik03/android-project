@@ -134,14 +134,14 @@ main {
     padding: 1px 10px;
 }
 
-main h4 {
+.main h4 {
     font-family: var(--fonte-padrao);
     font-size: 1.3em;
 
     color: var(--color5);
 }
 
-main p {
+.main p {
     font-family: var(--fonte-padrao);
 
     margin: 15px 0px;
@@ -153,7 +153,7 @@ main p {
     font-size: 1.1rem;
 }
 
-main p > a {
+.main p a {
     text-decoration: none;
     font-weight: bold;
     color: var(--color5);
@@ -163,54 +163,50 @@ main p > a {
     padding: 1px 5px;
 }
 
-main p > a:hover {
+.main p a:hover {
     text-decoration: underline;
-
     background-color: var(--color0);
-    color: var(--color3);
 
     transition: 0.1s;
 }
 
-main p > strong {
+.main p > strong {
     color: var(--color5);
-
     font-weight: bold;
 }
 
-main img {
+.main img {
     width: 100%;
-
     padding: 8px 0px;
 }
 
-main img.pequena {
+.main img.pequena {
     max-width: 350px;
     margin: auto;
 
     display: block;
 }
 
-main aside {
+.main aside {
     background-color: var(--color1);
 
     padding: 15px;
 
-    border-radius: 10px;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.419);
+    border-radius: 8px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.22);
 }
 
-main aside > ul {
+.main aside ul {
     list-style-position: inside;   
     columns: 2; 
 }
 
-main aside > h3 {
+.main aside h4 {
     background-color: var(--color5);
-    color: var(--color1);
+    color: white;
 
     margin: -15px -15px 0px -15px;
-    padding: 8px;
+    padding: 8px 8px;
 
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
