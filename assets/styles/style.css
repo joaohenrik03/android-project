@@ -16,8 +16,8 @@
     --color4: #1A5C37;
     --color5: #1b432c;
 
-    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
-    --fonte-destaque: 'Bebas Neue', cursiva;
+    --fonte-padrao: 'DM Sans', sans-serif;
+    --fonte-destaque: 'Poppins', sans-serif;
     --fonte-android: 'Android', cursiva;
 }
 
@@ -41,24 +41,26 @@ header {
     position: relative;
 }
 
+.txt-header {
+    text-align: center;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.22);
+}
+
 header h1 {
     color: white;
-    font-size: 3.5rem;
-    text-align: center;
+    font-size: 2.8rem;
+    font-weight: bold;
     font-family: var(--fonte-destaque);
-    
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.22);
 }
 
 header h2 {
     color: var(--color0);
-    text-align: center;
 
     font-family: var(--fonte-padrao);
     font-size: 1em;
-    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.248);
+    font-weight: 500;
 
-    max-width: 580px;
+    max-width: 500px;
     margin: auto;
 }
 
@@ -72,7 +74,10 @@ header h2 {
 
 nav li {
     list-style: none;
-    
+    display: inline-block;
+
+    margin-bottom: 8px;
+    margin-left: 12px;
 }
 
 nav a {
@@ -80,8 +85,7 @@ nav a {
     font-family: var(--fonte-padrao);
     font-weight: bold;
     font-size: 1em;
-    
-    padding: 0 10px;
+    padding: 5px;
 
     color: white;
 }
