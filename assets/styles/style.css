@@ -1,7 +1,5 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue& isplay=swap');
-
 @font-face {
     font-family: 'Android';
     src: url('../fonts/idroid.otf') format('opentype');
@@ -64,6 +62,10 @@ header h2 {
     margin: auto;
 }
 
+.nav-container {
+    width: 100%;
+}
+
 .nav {
     position: absolute;
     display: flex;
@@ -83,19 +85,18 @@ nav li {
 nav a {
     text-decoration: none;
     font-family: var(--fonte-padrao);
-    font-weight: bold;
+    font-weight: 500;
     font-size: 1em;
     padding: 5px;
+    border-radius: 8px;
 
     color: white;
 }
 
 nav a:hover {
     background-color: var(--color3);
-    color: var(--color5);
-    transition: 0.1s;
-
-    border-radius: 10px;
+    color: #f9f9f9;
+    transition: 0.3s;
 }
 
 #btn-mobile {
