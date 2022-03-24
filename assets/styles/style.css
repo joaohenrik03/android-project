@@ -34,53 +34,45 @@ body {
 header {
     background-image: linear-gradient(to top, var(--color5), var(--color4), var(--color3), var(--color2) );
 
-    text-align: center;
-
-    min-width: 370px;
-    min-height: 145px;
+    width: 100%;
+    height: 13.75rem;
 
     padding-top: 25px;
+    position: relative;
 }
 
-header > h1 {
+header h1 {
     color: white;
-    font-size: 3.2em;
-
-    padding-bottom: 12px;
-    padding-left: 10px;
-    padding-right: 10px;
-
+    font-size: 3.5rem;
+    text-align: center;
     font-family: var(--fonte-destaque);
     
-    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.248);
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.22);
 }
 
-header > h2 {
-    color: var(--cor0);
+header h2 {
+    color: var(--color0);
+    text-align: center;
 
     font-family: var(--fonte-padrao);
     font-size: 1em;
     text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.248);
 
     max-width: 580px;
-
     margin: auto;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 12px;
 }
 
-nav {
-    background-color: var(--cor5);
-    padding: 10px;
-    min-width: calc(370px - 20px);
-
-    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.248);
+.nav {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    left: 0;
+    bottom: 0;
 }
 
 nav li {
     list-style: none;
-    display: inline-block;
+    
 }
 
 nav a {
@@ -89,14 +81,14 @@ nav a {
     font-weight: bold;
     font-size: 1em;
     
-    padding: 10px;
+    padding: 0 10px;
 
     color: white;
 }
 
 nav a:hover {
-    background-color: var(--cor3);
-    color: var(--cor5);
+    background-color: var(--color3);
+    color: var(--color5);
     transition: 0.1s;
 
     border-radius: 10px;
@@ -122,7 +114,7 @@ main {
 }
 
 main h1 {
-    color: var(--cor4);
+    color: var(--color4);
 
     font-family: var(--fonte-android);
 
@@ -133,8 +125,8 @@ main h1 {
 main h2 {
     font-family: var(--fonte-android);
 
-    color: var(--cor4);
-    background-image: linear-gradient(to right, var(--cor1), rgba(255, 255, 255, 0));
+    color: var(--color4);
+    background-image: linear-gradient(to right, var(--color1), rgba(255, 255, 255, 0));
 
     text-align: left;
     font-size: 1.3em;
@@ -146,7 +138,7 @@ main h3 {
     font-family: var(--fonte-padrao);
     font-size: 1.3em;
 
-    color: var(--cor5);
+    color: var(--color5);
 }
 
 main p {
@@ -165,9 +157,9 @@ main p {
 main p > a {
     text-decoration: none;
     font-weight: bold;
-    color: var(--cor5);
+    color: var(--color5);
 
-    background-color: var(--cor1);
+    background-color: var(--color1);
 
     padding: 1px 5px;
 }
@@ -175,14 +167,14 @@ main p > a {
 main p > a:hover {
     text-decoration: underline;
 
-    background-color: var(--cor0);
-    color: var(--cor3);
+    background-color: var(--color0);
+    color: var(--color3);
 
     transition: 0.1s;
 }
 
 main p > strong {
-    color: var(--cor5);
+    color: var(--color5);
 
     font-weight: bold;
 }
@@ -201,7 +193,7 @@ main img.pequena {
 }
 
 main aside {
-    background-color: var(--cor1);
+    background-color: var(--color1);
 
     padding: 15px;
 
@@ -215,8 +207,8 @@ main aside > ul {
 }
 
 main aside > h3 {
-    background-color: var(--cor5);
-    color: var(--cor1);
+    background-color: var(--color5);
+    color: var(--color1);
 
     margin: -15px -15px 0px -15px;
     padding: 8px;
@@ -226,7 +218,7 @@ main aside > h3 {
 }
 
 div.video {
-    background-color: var(--cor5);
+    background-color: var(--color5);
 
     margin: 0px -20px 20px -20px;
     padding: 20px;
@@ -246,7 +238,7 @@ div.video > iframe {
 }
 
 footer {
-    background-color: var(--cor5);
+    background-color: var(--color5);
     color: white;
 
     min-width: 370px;
@@ -264,7 +256,7 @@ footer > p {
 footer p > a {
     text-decoration: none;
 
-    color: var(--cor1);
+    color: var(--color1);
 }
 
 @media (max-width: 470px) {
@@ -280,7 +272,7 @@ footer p > a {
         width: 100%;
         top: 41%;
         left: 0;
-        background-color: var(--cor5);
+        background-color: var(--color5);
         z-index: 1000;
         height: 0px;
         transition: .5s;
@@ -296,7 +288,7 @@ footer p > a {
         height: calc(100vh - 41%);
         flex-direction: column;
         align-items: center;
-        border-top: 2px solid var(--cor1);
+        border-top: 2px solid var(--color1);
         min-width: 370px;
     }
 
@@ -309,7 +301,7 @@ footer p > a {
         display: flex;
         padding: .3rem .8rem;
 
-        color: var(--cor1);
+        color: var(--color1);
 
         border: none;
         background: none;
@@ -320,7 +312,7 @@ footer p > a {
         display: block;
         border-top: 2px solid;
         width: 20px;
-        color: var(--cor0);
+        color: var(--color0);
     }
 
     #hamburguer::after, #hamburguer::before {
