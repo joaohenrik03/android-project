@@ -6,6 +6,8 @@
     font-weight: normal;
 }
 
+/*========= BASE =========*/
+
 :root {
     --color0: #bff0d3; 
     --color1: #83E1AD;    
@@ -28,6 +30,8 @@
 body {
     background-color: var(--color0);
 }
+
+/*========= HEADER =========*/
 
 header {
     background-image: linear-gradient(to top, var(--color5), var(--color4), var(--color3), var(--color2) );
@@ -62,6 +66,8 @@ header h2 {
     margin: auto;
 }
 
+/*========= NAVIGATION =========*/
+
 .nav-container {
     width: 100%;
 }
@@ -72,11 +78,6 @@ header h2 {
     flex-direction: row;
     left: 0;
     bottom: 0;
-}
-
-.icon-menu {
-    opacity: 0;
-    visibility: hidden;
 }
 
 nav li {
@@ -103,6 +104,15 @@ nav a:hover {
     color: #f9f9f9;
     transition: 0.3s;
 }
+
+/*========= MENU =========*/
+
+.icon-menu {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/*========= MAIN =========*/
 
 main {
     max-width: 750px;
@@ -237,6 +247,8 @@ div.video iframe {
     height: 90%;
 }
 
+/*========= FOOTER =========*/
+
 footer {
     background-color: var(--color5);
     color: white;
@@ -257,6 +269,10 @@ footer p a {
     text-decoration: none;
     color: var(--color1);
 }
+
+/*========= RESPONSIVE =========*/
+/*========= RESPONSIVE =========*/
+/*========= RESPONSIVE =========*/
 
 @media (max-width: 470px) {
 
