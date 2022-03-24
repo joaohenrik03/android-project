@@ -99,26 +99,21 @@ nav a:hover {
     transition: 0.3s;
 }
 
-#btn-mobile {
-    display: none;
-}
-
 main {
-    min-width: calc(370px - 40px);
     max-width: 750px;
 
     margin: auto;
-    margin-bottom: 20px;
-    padding: 20px;
+    margin-bottom: 1.25rem;
+    padding: 1.25rem;
 
     background-color: white;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.419);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.22);
 
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
-main h1 {
+.main h2 {
     color: var(--color4);
 
     font-family: var(--fonte-android);
@@ -127,19 +122,19 @@ main h1 {
     font-size: 1.9em;
 }
 
-main h2 {
+.main h3 {
     font-family: var(--fonte-android);
 
     color: var(--color4);
     background-image: linear-gradient(to right, var(--color1), rgba(255, 255, 255, 0));
 
     text-align: left;
-    font-size: 1.3em;
+    font-size: 1.5em;
 
     padding: 1px 10px;
 }
 
-main h3 {
+main h4 {
     font-family: var(--fonte-padrao);
     font-size: 1.3em;
 
@@ -152,11 +147,10 @@ main p {
     margin: 15px 0px;
 
     text-align: justify;
-    text-indent: 25px;
-
-    line-height: 1.5em;
-
-    font-size: 1.1em;
+    text-indent: 1.5rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    font-size: 1.1rem;
 }
 
 main p > a {
