@@ -14,9 +14,9 @@
     --color4: #1A5C37;
     --color5: #1b432c;
 
-    --fonte-padrao: 'DM Sans', sans-serif;
-    --fonte-destaque: 'Poppins', sans-serif;
-    --fonte-android: 'Android', cursiva;
+    --default-font: 'DM Sans', sans-serif;
+    --featured-font: 'Poppins', sans-serif;
+    --android-font: 'Android', cursiva;
 }
 
 * {
@@ -48,13 +48,13 @@ header h1 {
     color: white;
     font-size: 2.8rem;
     font-weight: bold;
-    font-family: var(--fonte-destaque);
+    font-family: var(--featured-font);
 }
 
 header h2 {
     color: var(--color0);
 
-    font-family: var(--fonte-padrao);
+    font-family: var(--default-font);
     font-size: 1em;
     font-weight: 500;
 
@@ -74,6 +74,11 @@ header h2 {
     bottom: 0;
 }
 
+.icon-menu {
+    opacity: 0;
+    visibility: hidden;
+}
+
 nav li {
     list-style: none;
     display: inline-block;
@@ -84,7 +89,7 @@ nav li {
 
 nav a {
     text-decoration: none;
-    font-family: var(--fonte-padrao);
+    font-family: var(--default-font);
     font-weight: 500;
     font-size: 1em;
     padding: 5px;
@@ -116,14 +121,14 @@ main {
 .main h2 {
     color: var(--color4);
 
-    font-family: var(--fonte-android);
+    font-family: var(--android-font);
 
     text-align: left;
     font-size: 1.9em;
 }
 
 .main h3 {
-    font-family: var(--fonte-android);
+    font-family: var(--android-font);
 
     color: var(--color4);
     background-image: linear-gradient(to right, var(--color1), rgba(255, 255, 255, 0));
@@ -135,14 +140,14 @@ main {
 }
 
 .main h4 {
-    font-family: var(--fonte-padrao);
+    font-family: var(--default-font);
     font-size: 1.3em;
 
     color: var(--color5);
 }
 
 .main p {
-    font-family: var(--fonte-padrao);
+    font-family: var(--default-font);
 
     margin: 15px 0px;
 
@@ -240,7 +245,7 @@ footer {
 
 footer p {
     text-align: center;
-    font-family: var(--fonte-padrao);
+    font-family: var(--default-font);
     font-size: 1rem;
     font-weight: 400;
     color: white;
