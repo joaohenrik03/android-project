@@ -59,7 +59,7 @@ header h2 {
     color: var(--color0);
 
     font-family: var(--default-font);
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: 500;
 
     max-width: 500px;
@@ -92,7 +92,7 @@ header h2 {
     text-decoration: none;
     font-family: var(--default-font);
     font-weight: 500;
-    font-size: 1em;
+    font-size: 1rem;
     padding: 5px;
     border-radius: 8px;
 
@@ -134,7 +134,7 @@ main {
     font-family: var(--android-font);
 
     text-align: left;
-    font-size: 1.9em;
+    font-size: 1.9rem;
 }
 
 .main h3 {
@@ -144,14 +144,14 @@ main {
     background-image: linear-gradient(to right, var(--color1), rgba(255, 255, 255, 0));
 
     text-align: left;
-    font-size: 1.5em;
+    font-size: 1.5rem;
 
     padding: 1px 10px;
 }
 
 .main h4 {
     font-family: var(--default-font);
-    font-size: 1.3em;
+    font-size: 1.3rem;
 
     color: var(--color5);
 }
@@ -274,7 +274,7 @@ footer p a {
 /*========= RESPONSIVE =========*/
 /*========= RESPONSIVE =========*/
 
-@media (max-width: 825px) {
+@media (max-width: 820px) {
 
     header h1 {
         font-size: 2.2rem;
@@ -283,6 +283,30 @@ footer p a {
     header h2 {
         font-size: 0.9rem;
         max-width: 400px;
+    }
+
+    main {
+        max-width: 650px;
+    }
+
+    .main h2 {
+        font-size: 1.7rem;
+    }
+
+    .main h3 {
+        font-size: 1.3rem;
+    }
+
+    .main h4 {
+        font-size: 1.1rem;
+    }
+
+    .main p {
+        font-size: 1rem;
+    }
+
+    footer p {
+        font-size: 0.9rem;
     }
 
     ul.nav {
@@ -299,10 +323,6 @@ footer p a {
         margin: 0 15px 15px 0;
 
         color: var(--color0);
-        font-size: 1.8em;
-    }
-
-    main {
-        max-width: 650px;
+        font-size: 1.8rem;
     }
 }
