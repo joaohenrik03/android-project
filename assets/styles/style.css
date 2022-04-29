@@ -40,25 +40,23 @@ header {
     background-image: linear-gradient(to top, var(--color5), var(--color4), var(--color3), var(--color2) );
 
     width: 100%;
-    height: 13.75rem;
-
-    padding-top: 25px;
-    position: relative;
 }
 
 .txt-header {
     text-align: center;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.22);
+    padding-top: 2rem;
+    padding-bottom: 3rem;
 }
 
-header h1 {
+header .txt-header h1 {
     color: white;
     font-size: 2.8rem;
     font-weight: bold;
     font-family: var(--featured-font);
 }
 
-header h2 {
+header .txt-header h2 {
     color: var(--color0);
 
     font-family: var(--default-font);
@@ -73,39 +71,37 @@ header h2 {
 
 .nav-container {
     width: 100%;
-}
-
-.nav {
-    position: absolute;
     display: flex;
-    flex-direction: row;
-    left: 0;
-    bottom: 0;
+    align-items: center;
+    justify-content: flex-start;
 }
 
-.nav li {
+.nav-container .nav {
+    display: flex;
+}
+
+.nav-container .nav li {
     list-style: none;
     display: inline-block;
 
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     margin-left: 12px;
 }
 
-.nav a {
+.nav-container .nav a {
     text-decoration: none;
     font-family: var(--default-font);
     font-weight: 500;
     font-size: 1rem;
-    padding: 5px;
-    border-radius: 8px;
+    padding: 0 5px;
+    margin-bottom: 5px;
 
     color: white;
 }
 
-.nav a:hover {
-    background-color: var(--color3);
-    color: #f9f9f9;
-    transition: 0.3s;
+.nav-container .nav a:hover {
+    border-bottom: 2px solid var(--color2);
+    color: var(--color0);
 }
 
 /*========= MENU =========*/
@@ -118,13 +114,13 @@ header h2 {
 /*========= MAIN =========*/
 
 main {
-    max-width: 750px;
-
+    max-width: 780px;
     margin: auto;
+    
     margin-bottom: 1.25rem;
     padding: 1.25rem;
 
-    background-color: white;
+    background-color: #fff;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.22);
 
     border-bottom-left-radius: 8px;
@@ -183,9 +179,7 @@ main {
 
 .main p a:hover {
     text-decoration: underline;
-    background-color: var(--color0);
-
-    transition: 0.1s;
+    transition: 0.2s;
 }
 
 .main p > strong {
@@ -214,20 +208,22 @@ main {
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.22);
 }
 
-.main aside ul {
-    list-style-position: inside;   
-    columns: 2; 
-}
-
 .main aside h4 {
     background-color: var(--color5);
     color: white;
 
     margin: -15px -15px 0px -15px;
-    padding: 8px 8px;
+
+    padding: 8px 0;
+    text-indent: 15px;
 
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
+}
+
+.main aside ul {
+    list-style-position: inside;   
+    columns: 2; 
 }
 
 div.video {
@@ -256,134 +252,23 @@ footer {
     background-color: var(--color5);
     color: white;
     width: 100%;
+    text-align: center;
 }
 
 footer p {
-    text-align: center;
     font-family: var(--default-font);
     font-size: 1rem;
     font-weight: 400;
-    color: white;
+    color: #fff;
 
     padding: 2px 0px;
 }
 
 footer p a {
-    text-decoration: none;
-    color: var(--color1);
+    text-decoration: underline;
+    color: #fff;
 }
 
 /*========= RESPONSIVE =========*/
 /*========= RESPONSIVE =========*/
 /*========= RESPONSIVE =========*/
-
-@media (max-width: 820px) {
-
-    header h1 {
-        font-size: 2.2rem;
-    }    
-
-    header h2 {
-        font-size: 0.9rem;
-        max-width: 400px;
-    }
-
-    main {
-        max-width: 650px;
-    }
-
-    .main h2 {
-        font-size: 1.7rem;
-    }
-
-    .main h3 {
-        font-size: 1.3rem;
-    }
-
-    .main h4 {
-        font-size: 1.1rem;
-    }
-
-    .main p {
-        font-size: 1rem;
-    }
-
-    footer p {
-        font-size: 0.9rem;
-    }
-
-    ul.nav {
-        opacity: 0;
-        visibility: hidden;
-    }
-
-    .icon-menu {
-        opacity: 1;
-        visibility: visible;
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        margin: 0 15px 15px 0;
-
-        color: var(--color0);
-        font-size: 1.8rem;
-    }
-
-    .icon-close {
-        opacity: 0;
-        visibility: hidden;    
-    }
-}
-
-@media (max-width: 383px) {
-    header h1 {
-        font-size: 2rem;
-    }    
-
-    header h2 {
-        font-size: 0.8rem;
-        max-width: 250px;
-        margin-bottom: 2rem;
-    }
-
-    .icon-menu {
-        opacity: 1;
-        visibility: visible;
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        margin: 0 8px 8px 0;
-
-        color: var(--color0);
-        font-size: 1.5rem;
-    }
-
-    .icon-close {
-        opacity: 0;
-        visibility: hidden;
-    }
-    
-    main {
-        max-width: 650px;
-    }
-
-    .main h2 {
-        font-size: 1.7rem;
-    }
-
-    .main h3 {
-        font-size: 1.3rem;
-    }
-
-    .main h4 {
-        font-size: 1.1rem;
-    }
-
-    .main p {
-        font-size: 1rem;
-    }
-
-    footer p {
-        font-size: 0.9rem;
-    }   
-}
