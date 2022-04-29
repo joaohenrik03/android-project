@@ -19,6 +19,8 @@
     --default-font: 'DM Sans', sans-serif;
     --featured-font: 'Poppins', sans-serif;
     --android-font: 'Android', cursiva;
+
+    font-size: 62.5%;
 }
 
 * {
@@ -31,7 +33,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: var(--color0);
-    overflow-x: hidden;
+    overflow-x: hidden; 
 }
 
 /*========= HEADER =========*/
@@ -44,14 +46,14 @@ header {
 
 .txt-header {
     text-align: center;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.22);
-    padding-top: 2rem;
-    padding-bottom: 3rem;
+    text-shadow: .2rem .2rem .6rem rgba(0, 0, 0, 0.22);
+    padding-top: 3.2rem;
+    padding-bottom: 4.8rem;
 }
 
 header .txt-header h1 {
     color: white;
-    font-size: 2.8rem;
+    font-size: 4.48rem;
     font-weight: bold;
     font-family: var(--featured-font);
 }
@@ -60,7 +62,7 @@ header .txt-header h2 {
     color: var(--color0);
 
     font-family: var(--default-font);
-    font-size: 1rem;
+    font-size: 1.6rem;
     font-weight: 500;
 
     max-width: 500px;
@@ -84,23 +86,23 @@ header .txt-header h2 {
     list-style: none;
     display: inline-block;
 
-    margin-bottom: 10px;
-    margin-left: 12px;
+    margin-bottom: 1rem;
+    margin-left: 1.2rem;
 }
 
 .nav-container .nav a {
     text-decoration: none;
     font-family: var(--default-font);
     font-weight: 500;
-    font-size: 1rem;
-    padding: 0 5px;
-    margin-bottom: 5px;
+    font-size: 1.6rem;
+    padding: 0 .5rem;
+    margin-bottom: .5rem;
 
     color: white;
 }
 
 .nav-container .nav a:hover {
-    border-bottom: 2px solid var(--color2);
+    border-bottom: .2rem solid var(--color2);
     color: var(--color0);
 }
 
@@ -117,14 +119,14 @@ main {
     max-width: 780px;
     margin: auto;
     
-    margin-bottom: 1.25rem;
-    padding: 1.25rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
 
     background-color: #fff;
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.22);
+    box-shadow: .2rem .2rem .6rem rgba(0, 0, 0, 0.22);
 
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: .8rem;
+    border-bottom-right-radius: .8rem;
 }
 
 .main h2 {
@@ -133,7 +135,7 @@ main {
     font-family: var(--android-font);
 
     text-align: left;
-    font-size: 1.9rem;
+    font-size: 3.04rem;
 }
 
 .main h3 {
@@ -143,14 +145,14 @@ main {
     background-image: linear-gradient(to right, var(--color1), rgba(255, 255, 255, 0));
 
     text-align: left;
-    font-size: 1.5rem;
+    font-size: 2.4rem;
 
-    padding: 1px 10px;
+    padding: .1rem 1rem;
 }
 
 .main h4 {
     font-family: var(--default-font);
-    font-size: 1.3rem;
+    font-size: 2rem;
 
     color: var(--color5);
 }
@@ -158,13 +160,13 @@ main {
 .main p {
     font-family: var(--default-font);
 
-    margin: 15px 0px;
+    margin: 1.5rem 0;
 
     text-align: justify;
-    text-indent: 1.5rem;
-    line-height: 1.5rem;
+    text-indent: 2.4rem;
+    line-height: 2.4rem;
     font-weight: 400;
-    font-size: 1.1rem;
+    font-size: 1.6rem;
 }
 
 .main p a {
@@ -174,7 +176,7 @@ main {
 
     background-color: var(--color1);
 
-    padding: 1px 5px;
+    padding: .1rem .5rem;
 }
 
 .main p a:hover {
@@ -189,7 +191,7 @@ main {
 
 .main img {
     width: 100%;
-    padding: 8px 0px;
+    padding: .8rem 0;
 }
 
 .main img.pequena {
@@ -202,26 +204,27 @@ main {
 .main aside {
     background-color: var(--color1);
 
-    padding: 15px;
+    padding: 1.5rem;
 
-    border-radius: 8px;
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.22);
+    border-radius: .8rem;
+    box-shadow: .2rem .2rem .6rem rgba(0, 0, 0, 0.22);
 }
 
 .main aside h4 {
     background-color: var(--color5);
     color: white;
 
-    margin: -15px -15px 0px -15px;
+    margin: -1.5rem -1.5rem 0 -1.5rem;
 
-    padding: 8px 0;
-    text-indent: 15px;
+    padding: .8rem 0;
+    text-indent: 1.5rem;
 
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+    border-top-left-radius: .8rem;
+    border-top-right-radius: .8rem;
 }
 
 .main aside ul {
+    font-size: 1.6rem;
     list-style-position: inside;   
     columns: 2; 
 }
@@ -229,8 +232,8 @@ main {
 div.video {
     background-color: var(--color5);
 
-    margin: 0px -20px 15px -20px;
-    padding: 20px;
+    margin: 0 2rem 1.5rem 2rem;
+    padding: 2rem;
     padding-bottom: 50%;
 
     position: relative;
@@ -257,11 +260,11 @@ footer {
 
 footer p {
     font-family: var(--default-font);
-    font-size: 1rem;
+    font-size: 1.6rem;
     font-weight: 400;
     color: #fff;
 
-    padding: 2px 0px;
+    padding: .2rem 0;
 }
 
 footer p a {
@@ -272,3 +275,11 @@ footer p a {
 /*========= RESPONSIVE =========*/
 /*========= RESPONSIVE =========*/
 /*========= RESPONSIVE =========*/
+
+
+@media (max-width: 1023px) {
+    header {
+        background-color: red;
+        color: red;
+    }
+}
