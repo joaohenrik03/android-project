@@ -21,6 +21,8 @@
     --android-font: 'Android', cursiva;
 
     font-size: 62.5%;
+
+    overflow-x: hidden;
 }
 
 * {
@@ -289,8 +291,6 @@ footer p a {
         visibility: hidden;
 
         height: 1px;
-
-        transition: .2s;
     }
 
     /*========= SHOW NAV =========*/
@@ -374,7 +374,7 @@ footer p a {
 
         background-color: var(--color2);
 
-        transition: .2s;
+        transition: .5s;
     }
 
      /*========= DECORATION HAMBURGER CLOSE BUTTON  =========*/
@@ -399,7 +399,8 @@ footer p a {
     }
 
     header .txt-header h2 {
-        max-width: 90%;
+        max-width: 80%;
+        margin: auto;
         font-size: 1.4rem;
     }
 
