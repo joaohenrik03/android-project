@@ -29,6 +29,11 @@
     box-sizing: border-box;
 }
 
+html {
+    width: 100%;
+    height: 100%;
+}
+
 body {
     width: 100%;
     height: 100%;
@@ -66,8 +71,7 @@ header .txt-header h2 {
     font-size: 1.6rem;
     font-weight: 500;
 
-    max-width: 500px;
-    margin: auto;
+    
 }
 
 /*========= NAVIGATION =========*/
@@ -386,5 +390,40 @@ footer p a {
 
     #btn-hamburger.active #hamburger::before {
         transform: rotate(-135deg);
+    }
+}
+
+@media (max-width: 568px) {
+    header .txt-header h1 {
+        font-size: 4rem;
+    }
+
+    header .txt-header h2 {
+        max-width: 90%;
+        font-size: 1.4rem;
+    }
+
+    .main h2 {
+        font-size: 3rem;
+    }
+
+    .main h3 {
+        font-size: 2.4rem;
+    }
+
+    .main h4 {
+        font-size: 1.7rem;
+    }
+
+    .main p {
+        font-size: 1.4rem;
+    }
+
+    .main aside ul {
+        font-size: 1.4rem;
+    }
+
+    footer p {
+        font-size: 1.4rem;
     }
 }
