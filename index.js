@@ -1,3 +1,5 @@
+// Open menu using hamburger button
+
 const btnHamburger = document.querySelector('#btn-hamburger');
 
 function showMenu() {
@@ -10,6 +12,7 @@ function showMenu() {
 
 btnHamburger.addEventListener('click', showMenu);
 
+// Close menu when clicking a link
 
 const navItem = document.querySelectorAll('.nav-item');
 
