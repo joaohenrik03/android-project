@@ -42,6 +42,7 @@ header {
     background-image: linear-gradient(to top, var(--color5), var(--color4), var(--color3), var(--color2) );
 
     width: 100%;
+    padding: 1rem;
 }
 
 .txt-header {
@@ -86,7 +87,6 @@ header .txt-header h2 {
     list-style: none;
     display: inline-block;
 
-    margin-bottom: 1rem;
     margin-left: 1.2rem;
 }
 
@@ -108,9 +108,8 @@ header .txt-header h2 {
 
 /*========= MENU =========*/
 
-.icon-menu {
-    opacity: 0;
-    visibility: hidden;
+#btn-hamburger {
+    display: none;
 }
 
 /*========= MAIN =========*/
@@ -277,9 +276,115 @@ footer p a {
 /*========= RESPONSIVE =========*/
 
 
-@media (max-width: 1023px) {
-    header {
-        background-color: red;
-        color: red;
+@media (max-width: 968px) {
+
+    /*========= HIDDEN NAV =========*/
+    .nav-container {
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+
+        height: 1px;
+
+        transition: .2s;
+    }
+
+    /*========= SHOW NAV =========*/
+    .nav-container.show {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        position: fixed;
+        z-index: 100000;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+
+        opacity: 1;
+        visibility: visible;
+
+        background-color: var(--color4);
+
+        overflow-y: auto;
+    }
+
+    .nav-container.show ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .nav-container.show a {
+        font-size: 2rem;
+    }
+
+    /*========= HAMBURGER BUTTON =========*/
+
+    .btn-container {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    #btn-hamburger {
+        display: flex;
+
+        font-size: 1.6rem;
+
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    #btn-hamburger.active {
+        position: fixed;
+        top: 3rem;
+        right: 3rem;
+        z-index: 1000000;
+
+        opacity: 1;
+    }
+
+    /*========= DECORATION HAMBURGER OPEN BUTTON  =========*/
+
+    #btn-hamburger #hamburger {
+        display: block;
+        border-top: .2rem solid var(--color2);
+        width: 2rem;
+    }
+
+    #btn-hamburger #hamburger::after,
+    #btn-hamburger #hamburger::before {
+        content: "";
+
+        position: relative;
+        display: block;
+        width: 2rem;
+        height: .2rem;
+        margin-top: .5rem;
+
+        background-color: var(--color2);
+
+        transition: .2s;
+    }
+
+     /*========= DECORATION HAMBURGER CLOSE BUTTON  =========*/
+
+    #btn-hamburger.active #hamburger {
+        border: 0;
+    }
+
+    #btn-hamburger.active #hamburger::after {
+        transform: rotate(135deg);
+        top: -.7rem;
+    }
+
+    #btn-hamburger.active #hamburger::before {
+        transform: rotate(-135deg);
     }
 }
